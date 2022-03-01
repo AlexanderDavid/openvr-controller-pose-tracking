@@ -18,7 +18,7 @@ if len(sys.argv) == 1:
 elif len(sys.argv) == 2:
     interval = 1/float(sys.argv[1])
 else:
-    print("Invalid number of arguments")
+    print("Invalid number of arguments", file=sys.stderr)
     exit(1)
 
 # Define all controllers/trackers that we want to track. If the device
